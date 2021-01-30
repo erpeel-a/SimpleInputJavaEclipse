@@ -12,7 +12,7 @@ import android.view.View.OnClickListener;
 
 public class MainActivity extends Activity {
 	
-	EditText editTxt;
+	EditText editTxt1, editTxt2, editTxt3, editTxt4;
 	Button btn;
 	TextView textVw;
 	
@@ -21,7 +21,10 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		editTxt = (EditText)findViewById(R.id.editText1);
+		editTxt1 = (EditText)findViewById(R.id.editText1);
+		editTxt2 = (EditText)findViewById(R.id.editText2);
+		editTxt3 = (EditText)findViewById(R.id.editText3);
+		editTxt4 = (EditText)findViewById(R.id.editText4);
 		btn = (Button)findViewById(R.id.button1);
 		
 		btn.setOnClickListener(new OnClickListener() {
@@ -30,11 +33,12 @@ public class MainActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				textVw = (TextView)findViewById(R.id.textView3);
-				textVw.setText("nama \t : "+editTxt.getText().toString());
-				
+				textVw.setText("Nama \t : " + editTxt1.getText().toString() +
+							   "\n NIS \t : " + editTxt4.getText().toString() +
+							   "\n Tempat Lahir \t : " + editTxt2.getText().toString() +
+							   "\n Tanggal Lahir \t : " + editTxt3.getText().toString());				
 			}
 		});
-		
 	} 
 
 	@Override

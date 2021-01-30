@@ -10,5 +10,8 @@
     <string name="inputFormNama"></string>
     <string name="formButtonSimpan">Simpan</string>
     <string name="outputForm">outputLabel</string>
+    <string name="nis">NIS</string>
+    <string name="tempatLahir">Tempat Lahir</string>
+    <string name="tanggalLahir">Tanggal Lahir</string>
 
 </resources>
